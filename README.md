@@ -1,5 +1,5 @@
 # webgicielBot
-robot de mutualisation de serveur
+Robot numérique de mutualisation de serveur
 
 Prérequis :
 - un serveur de type Debian 8
