@@ -62,6 +62,7 @@ necessite des classes PHP pour les traitements
 		- htmlHeader()
 	- bot.mouche.php
 		- mouche($quoi)
+        - formulaireIdentification()
 
 
 	
