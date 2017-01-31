@@ -22,14 +22,18 @@ Plusieurs niveaux d'utilisateurs sont possibles :
 Commençons par faire la page d'entrée du site d'administration :
 - mouche le passage
 - formulaire d'identification
-- ajax du traitement du formulaire d'identification
-- mouche les echecs à l'identification
-- div erreurs
-- bouton [identifiant oublié]
-- formulaire de récupération des identifiants
-- ajax du traitement du formulaire de récupération des identifiants
-- div erreur
-- dirige vers page welcome
+- script jquery des fonctionnalités du formulaire
+	- touche enter sur les inputs
+	- btn annule
+	- btn login
+- ajax du traitement du formulaire d'identification + protection sql injection
+ mouche les echecs à l'identification
+ div erreurs
+ bouton [identifiant oublié]
+ formulaire de récupération des identifiants
+ ajax du traitement du formulaire de récupération des identifiants
+ div erreur
+ dirige vers page welcome
 
 nécessite table users
 	id
@@ -38,6 +42,26 @@ nécessite table users
 	mail
 	niveau
 	actif
+	idParrain
 	dateCrea
 	dateModif
 
+et table passages
+	id
+	ip
+	os
+	langue
+	quoi
+	quand
+
+necessite des classes PHP pour les traitements
+	- bot.bdd.php
+		- connectionInsertInto($query, $donnees)
+	- bot.htmlElement.php
+		- doctype($niv)
+		- htmlHeader()
+	- bot.mouche.php
+		- mouche($quoi)
+
+
+	
