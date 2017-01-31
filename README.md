@@ -33,7 +33,7 @@ Commençons par faire la page d'entrée du site d'administration :
  formulaire de récupération des identifiants
  ajax du traitement du formulaire de récupération des identifiants
  div erreur
- dirige vers page welcome
+ - init Session + dirige vers page welcome
 
 nécessite table users
 	id
