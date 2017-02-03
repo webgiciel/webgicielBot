@@ -70,6 +70,16 @@ passagesAdmin
 	- quoi
 	- quand
 
+passagesAdminError
+	- id
+	- ip
+	- os
+	- langue
+	- login
+	- pass
+	- quoi
+	- quand
+
 necessite des classes PHP pour les traitements
 	- bot.bdd.php
 		- connectionInsertInto($query, $donnees)
