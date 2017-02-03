@@ -20,6 +20,7 @@ Plusieurs niveaux d'utilisateurs sont possibles :
 - Invités
 
 Commençons par faire la page d'entrée du site d'administration :
+- skip l'identification si la session est reconnue
 - mouche le passage
 - formulaire d'identification
 - script jquery des fonctionnalités du formulaire
@@ -35,34 +36,61 @@ Commençons par faire la page d'entrée du site d'administration :
  div erreur
  - init Session + dirige vers page welcome
 
-nécessite table users
-	id
-	pseudo
-	pass (crypté)
-	mail
-	niveau
-	actif
-	idParrain
-	dateCrea
-	dateModif
+Page welcome de l'administration
 
-et table passages
-	id
-	ip
-	os
-	langue
-	quoi
-	quand
+
+nécessite table SQL
+users
+	- id
+	- pseudo
+	- pass (crypté)
+	- mail
+	- niveau
+	- actif
+	- idParrain
+	- dateCrea
+	- dateModif
+
+passages
+	- id
+	- ip
+	- os
+	- langue
+	- quoi
+	- quand
+
+passagesAdmin
+	- id
+	- userId
+	- ip
+	- os
+	- langue
+	- quoi
+	- quand
 
 necessite des classes PHP pour les traitements
 	- bot.bdd.php
 		- connectionInsertInto($query, $donnees)
 	- bot.htmlElement.php
-		- doctype($niv)
-		- htmlHeader()
+		- afficheDoctype($niv)
+		- afficheHeadHtml()
+		- afficheOuvertureBody()
+		- afficheFermetureBody()
+		- afficheFermetureHtml()
+		- afficheOuvertureContainer($val)
+		- afficheFermetureContainer()
 	- bot.mouche.php
-		- mouche($quoi)
-        - formulaireIdentification()
+		- passage($quoi)
+		- passageAdmin($quoi)
+        - bot.user.php
+		- cryptPass($pass)
+		- initKey($pseudo, $id, $mail)
+		- initSession($id, $pseudo, $contact, $niveau)
+		- decoupeKey($key)
+		- testSessionValide()
+		- testUser()
+		- skipIdentification()
+
 
 
 	
