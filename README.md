@@ -23,6 +23,7 @@ Commençons par faire la page d'entrée du site d'administration :
 - skip l'identification si la session est reconnue
 - mouche le passage
 - formulaire d'identification
+	- bloque le formulaire s'il il y a eu plus de 3 tentatives en 15 minutes
 - script jquery des fonctionnalités du formulaire
 	- touche enter sur les inputs
 	- btn annule
