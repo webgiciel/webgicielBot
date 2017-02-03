@@ -37,7 +37,9 @@ Commençons par faire la page d'entrée du site d'administration :
  - init Session + dirige vers page welcome
 
 Page welcome de l'administration
-
+- redirectionne sur la page d'identification si la session n'est pas reconnue
+- mouche le passage
+- barre de menu adapté au niveau de l'utilisateur
 
 nécessite table SQL
 users
