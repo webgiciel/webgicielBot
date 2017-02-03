@@ -40,7 +40,7 @@ Page welcome de l'administration
 
 
 nécessite table SQL
-users
+• users
 	- id
 	- pseudo
 	- pass (crypté)
