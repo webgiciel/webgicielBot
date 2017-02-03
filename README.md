@@ -30,7 +30,7 @@ Commençons par faire la page d'entrée du site d'administration :
 	- btn login
 - ajax du traitement du formulaire d'identification + protection sql injection
 - mouche les echecs à l'identification
-- div message erreur
+- div message erreur + compte à rebours
 - bouton [identifiant oublié]
  formulaire de récupération des identifiants
  ajax du traitement du formulaire de récupération des identifiants
