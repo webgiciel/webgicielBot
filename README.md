@@ -20,6 +20,7 @@ Plusieurs niveaux d'utilisateurs sont possibles :
 - Invités
 
 Commençons par faire la page d'entrée du site d'administration :
+<b>Fonctionnalités de la page d'entrée du site d'administration</b>
 - skip l'identification si la session est reconnue
 - mouche le passage
 - formulaire d'identification
