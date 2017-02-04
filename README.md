@@ -4,6 +4,8 @@ Robot numérique de mutualisation de serveur
 Prérequis :
 - un serveur de type Debian 8
 - un nom de domaine rattaché
+- copier l'ensembles des fichiers sur le serveur
+- initialiser les tables SQL
 
 Objectifs :
 
@@ -19,7 +21,9 @@ Plusieurs niveaux d'utilisateurs sont possibles :
 - Membres
 - Invités
 
-Commençons par faire la page d'entrée du site d'administration :<b>Fonctionnalités de la page d'entrée du site d'administration</b>
+Commençons par faire la page d'entrée du site d'administration :
+
+<b>Fonctionnalités de la page d'entrée du site d'administration</b>
 - skip l'identification si la session est reconnue
 - mouche le passage
 - formulaire d'identification
