@@ -18,6 +18,10 @@ Version 1.0
 - un site d'administration en https
 - autant de sites public alias que d'utilisateurs modifiable par le site d'administration
 
+Version ultérieur
+- mettre un compte à rebours sur le bouton des tentatives d'identification
+- mettre un bloqueur au formulaire d'oubli des identifiants après 3 essais
+
 Plusieurs niveaux d'utilisateurs sont possibles :
 - Propriétaire du serveur
 - Developpeur et/ou administrateur
@@ -25,7 +29,7 @@ Plusieurs niveaux d'utilisateurs sont possibles :
 - Membres
 - Invités
 
-Commençons par faire la page d'entrée du site d'administration :
+<h2>Commençons par faire le module d'entrée du site d'administration</h2>
 
 <b>Fonctionnalités de la page d'entrée du site d'administration</b>
 - skip l'identification si la session est reconnue
@@ -44,6 +48,9 @@ Commençons par faire la page d'entrée du site d'administration :
  ajax du traitement du formulaire de récupération des identifiants
  div erreur
  - init Session + dirige vers page welcome
+
+Page de recréation de mot de passe en cas d'oubli
+
 
 Page welcome de l'administration
 - redirectionne sur la page d'identification si la session n'est pas reconnue
