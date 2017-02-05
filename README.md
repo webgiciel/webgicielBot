@@ -3,7 +3,7 @@ Robot numérique de mutualisation de serveur.<br>
 L'internet d'aujourd'hui se transforme en minitel. Nous sommes de plus en plus observé, écouté, suivie, pour tout dire étudié par de grands groupes industriels. Ils se servent de nos données pour concevoir une intelligence artificielle leur permettant de mieux nous manipuler.<br>
 Le projet du webgicielBot est de revenir aux valeurs de liberté de l'origine de l'internet, en donnant des outils nécessaires et suffisants à des propriétaires de serveurs.<br>
 
-Prérequis :
+<b>Prérequis :</b><br>
 - un serveur de type Debian 8
 - un nom de domaine rattaché
 - copier l'ensembles des fichiers sur le serveur
