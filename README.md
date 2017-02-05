@@ -41,18 +41,25 @@ Plusieurs niveaux d'utilisateurs sont possibles :
 	- btn annule
 	- btn login
 - ajax du traitement du formulaire d'identification + protection sql injection
-- mouche les echecs à l'identification
-- div message erreur + compte à rebours
-- bouton [identifiant oublié]
- formulaire de récupération des identifiants
- ajax du traitement du formulaire de récupération des identifiants
- div erreur
- - init Session + dirige vers page welcome
+	- init Session + dirige vers page welcome
+	- mouche les echecs à l'identification
+		- div message erreur + compte à rebours
+		- bouton [identifiant oublié]
+		- formulaire de récupération des identifiants
+		- script jquery des fonctionnalités du formulaire
+			- touche enter sur le input
+			- btn annule
+			- btn recup
+		- ajax du traitement du formulaire de récupération des identifiants
+			- mouche les echecs à l'identification + message error
+			- envoi un mail + lien avec clé courte
 
-Page de recréation de mot de passe en cas d'oubli
 
 
-Page welcome de l'administration
+<b>Page de recréation de mot de passe en cas d'oubli</b>
+
+
+<b>Page welcome de l'administration</b>
 - redirectionne sur la page d'identification si la session n'est pas reconnue
 - mouche le passage
 - barre de menu adapté au niveau de l'utilisateur
@@ -95,6 +102,8 @@ passagesAdminError
 	- pass
 	- quoi
 	- quand
+
+
 
 necessite des classes PHP pour les traitements
 	- bot.bdd.php
