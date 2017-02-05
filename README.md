@@ -4,10 +4,12 @@ L'internet d'aujourd'hui se transforme en minitel. Nous sommes de plus en plus o
 Le projet du webgicielBot est de revenir aux valeurs de liberté de l'origine de l'internet, en donnant des outils nécessaires et suffisants à des propriétaires de serveurs.<br>
 
 <b>Prérequis :</b><br>
-- un serveur de type Debian 8
-- un nom de domaine rattaché
-- copier l'ensembles des fichiers sur le serveur
-- initialiser les tables SQL
+<ul>
+<li>un serveur de type Debian 8</li>
+<li>un nom de domaine rattaché</li>
+<li>copier l'ensembles des fichiers sur le serveur</li>
+<li>initialiser les tables SQL</li>
+</ul>
 
 Objectifs :
 
