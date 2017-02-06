@@ -78,7 +78,8 @@ Plusieurs niveaux d'utilisateurs sont possibles :
 - barre de menu adapté au niveau de l'utilisateur
 
 <h2>nécessite table SQL</h2>
-- users
+- users<br>
+Stocke les infos sur les utilisateurs
 	- id
 	- pseudo
 	- pass (crypté)
