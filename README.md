@@ -57,6 +57,18 @@ Plusieurs niveaux d'utilisateurs sont possibles :
 
 
 <b>Page de recréation de mot de passe en cas d'oubli</b>
+- si la clef est valide
+	- recupere les infos user
+	- affiche formulaire de nouveau password
+		- verifie les conditions
+			- pass > 4 car
+			- pass2 = pass1
+			
+			(en cours)
+				modif base + mail
+			
+- sinon la clef est invalide
+	- message clé désactivée
 
 
 <b>Page welcome de l'administration</b>
@@ -64,7 +76,7 @@ Plusieurs niveaux d'utilisateurs sont possibles :
 - mouche le passage
 - barre de menu adapté au niveau de l'utilisateur
 
-nécessite table SQL
+<b>nécessite table SQL</b>
 users
 	- id
 	- pseudo
@@ -103,6 +115,12 @@ passagesAdminError
 	- quoi
 	- quand
 
+oubli
+	- id
+	- ip
+	- cle
+	- actif
+	- quand
 
 
 necessite des classes PHP pour les traitements
