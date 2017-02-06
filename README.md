@@ -31,7 +31,7 @@ Plusieurs niveaux d'utilisateurs sont possibles :
 
 <h2>Commençons par faire le module d'entrée du site d'administration</h2>
 
-<b>Fonctionnalités de la page d'entrée du site d'administration</b>
+<b>A. Fonctionnalités de la page d'entrée du site d'administration</b>
 - skip l'identification si la session est reconnue
 - mouche le passage
 - formulaire d'identification
@@ -54,19 +54,20 @@ Plusieurs niveaux d'utilisateurs sont possibles :
 			- mouche les echecs à l'identification + message error
 			- envoi un mail + lien avec clé courte
 
-
-
-<b>Page de recréation de mot de passe en cas d'oubli</b>
+<b>B. Page de recréation de mot de passe en cas d'oubli</b>
 - si la clef est valide
-	- recupere les infos user
-	- affiche formulaire de nouveau password
+	- recupère les infos user
+	- affiche le formulaire de nouveau password
 		- verifie les conditions
 			- pass > 4 car
 			- pass2 = pass1
-			
-			(en cours)
-				modif base + mail
-			
+		- ajax du traitement du formulaire de nouveau password + protection sql injection
+			- recupere l id de la key
+			- recupere les infos user avec l id
+			- crypt key
+			- save new mot de passe
+			- desactive clé courte new pass
+			- envoi mail changement pass ok
 - sinon la clef est invalide
 	- message clé désactivée
 
@@ -118,6 +119,7 @@ passagesAdminError
 oubli
 	- id
 	- ip
+	- pseudo
 	- cle
 	- actif
 	- quand
