@@ -54,7 +54,7 @@ Plusieurs niveaux d'utilisateurs sont possibles :
 			- mouche les echecs à l'identification + message error
 			- envoi un mail + lien avec clé courte
 
-<b>B. Page de recréation de mot de passe en cas d'oubli</b>
+<b>B. Fonctionnalités de la page de re-création du mot de passe en cas d'oubli</b>
 - si la clef est valide
 	- recupère les infos user
 	- affiche le formulaire de nouveau password
@@ -72,13 +72,13 @@ Plusieurs niveaux d'utilisateurs sont possibles :
 	- message clé désactivée
 
 
-<b>Page welcome de l'administration</b>
+<b>C. Fonctionnalités de la page welcome de l'administration</b>
 - redirectionne sur la page d'identification si la session n'est pas reconnue
 - mouche le passage
 - barre de menu adapté au niveau de l'utilisateur
 
-<b>nécessite table SQL</b>
-users
+<h2>nécessite table SQL</h2>
+- users
 	- id
 	- pseudo
 	- pass (crypté)
